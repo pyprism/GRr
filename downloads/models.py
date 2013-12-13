@@ -9,3 +9,4 @@ class Users(models.Model):
 
 class File(models.Model):
 	fileName = models.CharField(max_length=300)
+	counter = models.IntegerField
