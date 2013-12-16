@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-import downloads.models Users , File
+from downloads.models import Users , File
 # Register your models here.
 
 admin.site.register(Users)

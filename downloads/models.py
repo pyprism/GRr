@@ -8,5 +8,6 @@ class Users(models.Model):
 	password = models.CharField(max_length=50)
 
 class File(models.Model):
+	user = models.ForeignKey(Users)
 	fileName = models.CharField(max_length=400)
 	counter = models.IntegerField()
