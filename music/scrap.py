@@ -35,3 +35,5 @@ def alphaSelect():
 	soup = BeautifulSoup(html)
 	x = soup.find_all("a", class_='autoindex_a')
 	return x
+
+def 
