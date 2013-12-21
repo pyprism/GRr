@@ -2,13 +2,16 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="author" content="pyPrism">
+	<meta name="keywords" content="music.com.bd">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Document</title>
 	{% load static %}
-	<link rel="stylesheet" href="{% static "dist/css/bootstrap.min.css" %}"  >
-</head>
+	<link rel="stylesheet" href="{% static "dist/css/bootstrap.min.css" %}"  ></head>
+	<link rel="stylesheet" href="{% static "dist/css/style.css" %}"  ></head>
 <body>
-	<div class="content">
-        {% block content %}{% endblock %}
-    </div>
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
 </body>
 </html>
