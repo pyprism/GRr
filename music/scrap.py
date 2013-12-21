@@ -4,8 +4,8 @@ from urllib2 import urlopen
 url = "http://www.music.com.bd/download/browse/M/Moushumi/"
 
 
-html = urlopen(url).read()
-soup = BeautifulSoup(html)
+#html = urlopen(url).read()
+#soup = BeautifulSoup(html)
 
 #print soup.find_all("a", class_='autoindex_a')[0]
 
@@ -34,6 +34,10 @@ def alphaSelect():
 	html = urlopen(url).read()
 	soup = BeautifulSoup(html)
 	x = soup.find_all("a", class_='autoindex_a')
-	return x
+	a = []
+	c = 0
+	for i in x:
+		a.insert(c,i.get('href'))
+		c = c +1
+	return a
 
-def 
