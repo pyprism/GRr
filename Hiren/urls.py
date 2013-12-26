@@ -1,7 +1,10 @@
 from django.conf.urls import patterns, include, url
+from music.api import EntryResource
 
 from django.contrib import admin
 admin.autodiscover()
+
+entry_resource = EntryResource()
 
 urlpatterns = patterns('',
     # Examples:
@@ -10,4 +13,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^',include('music.urls')),
+    (r'^api/', include(entry_resource.urls)),
 )

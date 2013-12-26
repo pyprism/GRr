@@ -3,5 +3,5 @@ from music import views
 
 urlpatterns = patterns('',
         url(r'^$', views.alphaSelect, name='index'),
-        url(r'^hiren/', views.alphaSelect)
+        url(r'^hiren/', views.alphaSelect),
         )
